@@ -2,6 +2,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
+import Script from './components/Script';
 import About from './components/About';
 import Book from './components/Book';
 import Contact from './components/Contact';

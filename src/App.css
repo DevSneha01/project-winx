@@ -743,3 +743,138 @@ textarea.input {
      transform: translateY(0px);
    }
  }
+
+ .coontainer{
+  position: relative;
+  perspective: 1000px;
+ }
+ .coontainer .slidee-container .slidee{
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 5px 10px black;
+  width: 450px;
+  padding: 20px;
+  margin-left: 35%;
+  position: relative;
+  transform-style: preserve-3d;
+ }
+ .coontainer .slidee-container .slidee .icoon{
+   position: absolute;
+   top: 10px;
+   right: 15px;
+   font-size: 90px;
+   color: orangered;
+ }
+ .coontainer .slidee-container .slidee img{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 10px;
+ }
+ .coontainer .slidee-container .slidee .user{
+  display: flex;
+  align-items: center;
+ }
+ .coontainer .slidee-container .slidee .user .user-info h3{
+  color: orange;
+  font-size: 20px;
+ }
+ .coontainer .slidee-container .slidee .user .user-info .stars i{
+  color: #000000;
+  font-size: 15px;
+ }
+ .coontainer .slidee-container .slidee .text{
+  color: #000000;
+  padding-top: 15px;
+  font-size: 14px;
+  font-style: italic;
+ }
+ .coontainer .slidee-container{
+  display: none;
+
+ }
+ .coontainer .slidee-container.active{
+  display: block;
+ }
+ .coontainer #next, .coontainer #prev{
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  text-align: center;
+  background-color: orange;
+  cursor: pointer;
+  font-size: 20px;
+  border-radius: 50%;
+  color: #000000;
+  box-shadow: 0 5px 10px black;
+}
+.coontainer #next{
+  right: 300px;
+}
+.coontainer #prev{
+  left: 300px;
+}
+.coontainer #next:hover, .coontainer #prev:hover{
+  background-color: #000000;
+  color: orange;
+}
+#form-details{
+  display: flex;
+  justify-content: space-between;
+  margin: 30px;
+  padding: 80px;
+  border: 1px solid burlywood;
+  background-color: rgb(255, 232, 202);
+}
+#form-details h2{
+  font-family: 'Oleo Script Swash Caps';
+  color: rgb(174, 9, 174);
+  padding: 20px;
+}
+#form-details span{
+  font-family: "Anek Gujarati";
+  font-weight: 600;
+  text-transform: capitalize;
+  padding-left: 20px;
+  font-size: 20px;
+}
+#form-details form{
+  width: 65%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+#form-details form input,
+#form-details form textarea{
+  width: 100%;
+  padding: 12px 15px;
+  outline: none;
+  margin-bottom: 20px ;
+  border: 1px solid #333734;
+}
+#form-details form button{
+  background-color: #dd0993;
+  color: white;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+#form-details form button:hover{
+  color: #dd0993;
+  background-color: #000000;
+  
+}
+#form-details input::placeholder{
+  color: #000000;
+}
+#form-details textarea::placeholder{
+  color: #000000;
+}
+#form-details .gif img{
+  margin-top: 50%;
+}

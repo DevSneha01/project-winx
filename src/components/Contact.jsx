@@ -1,14 +1,13 @@
 import React from 'react'
 
-const faqs = document.querySelectorAll(".faq");
+
+const Contact = () => {
+  const faqs = document.querySelectorAll(".faq");
 faqs.forEach((faq) => {
   faq.addEventListener("click", () => {
     faq.classList.toggle("active");
   });
 });
-
-
-const Contact = () => {
   return (
     <div>
       <div class="container">
